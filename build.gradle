@@ -17,7 +17,7 @@ import org.apache.tools.ant.filters.ReplaceTokens
 
 buildscript {
     ext {
-        osPackageVersion = "8.3.0"
+        osPackageVersion = "11.4.0"
     }
     repositories {
         jcenter()
@@ -27,7 +27,7 @@ buildscript {
     }
 }
 
-apply plugin: "nebula.ospackage"
+apply plugin: "com.netflix.nebula.ospackage"
 
 buildDir = projectBuildDir
 version = projectVersion

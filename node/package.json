@@ -1,0 +1,13 @@
+{
+  "name": "electrfy_oauth2_mapper",
+  "version": "1.0.0",
+  "description": "Mapper for OAuth2 tokens",
+  "author": "Marcus Westin <marcus@electrfy.se>",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
