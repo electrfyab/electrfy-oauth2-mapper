@@ -28,7 +28,7 @@ app.post('/mapper', (req, res) => {
     private String parentCustomerName;
     private CustomerId parentCustomerId;
 }*/
-  const email = req.body.emails && req.body.emails.length > 0 ? req.body.emails[0].value : null;
+  const email = req.body.emails && req.body.emails.length > 0 ? req.body.emails[0] : null;
 
   res.setHeader('Content-Type', 'application/json');
   res.end(JSON.stringify({
