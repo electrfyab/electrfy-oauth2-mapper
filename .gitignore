@@ -31,3 +31,5 @@ pom.xml.versionsBackup
 **/Californium.properties
 **/.env
 paho**/
+node_modules/**
+node/node_modules/**
