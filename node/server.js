@@ -2,14 +2,15 @@
  
 const express = require('express');
  
-app.use(express.json());
-
 // Constants
 const PORT = 8080;
 const HOST = '0.0.0.0';
  
 // App
 const app = express();
+
+app.use(express.json());
+
 app.post('/mapper', (req, res) => {
   /*public class OAuth2User {
     private String tenantName;
