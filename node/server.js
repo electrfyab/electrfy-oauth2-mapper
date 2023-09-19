@@ -30,7 +30,8 @@ app.post('/mapper', (req, res) => {
 }*/
   const email = req.body.emails && req.body.emails.length > 0 ? req.body.emails[0].value : null;
 
-  return {
+  res.setHeader('Content-Type', 'application/json');
+  res.end(JSON.stringify({
     email: email,
     tenantName: email,
     firstName: req.body.given_name,
@@ -38,7 +39,7 @@ app.post('/mapper', (req, res) => {
     userGroups: [
       "Tenant Administrators"
     ]
-  }
+  }));
 });
  
 app.listen(PORT, HOST, () => {
